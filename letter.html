@@ -24,16 +24,15 @@
             left: 50%;
             min-width: 100%;
             min-height: 100%;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
+            width: auto;
+            height: auto;
+            z-index: -100;
             transform: translate(-50%, -50%);
             object-fit: cover;
-            object-position: center center;
         }
 
         .content {
-            position: relative; /* Anchor point for ALL 3 Snoopy stickers */
+            position: relative; 
             background-color: rgba(255, 255, 255, 0.95);
             color: #222222;
             font-family: 'Georgia', serif;
@@ -45,7 +44,6 @@
             box-shadow: 0 0 25px rgba(173, 216, 230, 0.6), 0 10px 30px rgba(0, 0, 0, 0.4); 
         }
 
-        /* STICKER 1: Top Right */
         .snoopy-right {
             position: absolute;
             top: -70px;    
@@ -55,21 +53,21 @@
             pointer-events: none;
         }
 
-        /* NEW STICKER 2: Middle Left */
+       
         .snoopy-mid-left {
             position: absolute;
-            top: 45%;         /* Places him halfway down the long card */
-            left: -45px;      /* Hangs him off the left edge */
+            top: 45%;         
+            left: -45px;      
             width: 100px;
             z-index: 10;
             pointer-events: none;
         }
 
-        /* NEW STICKER 3: Bottom Right */
+       
         .snoopy-bottom-right {
             position: absolute;
-            bottom: -50px;    /* Pulls him slightly below the bottom border */
-            right: -15px;     /* Off the right side */
+            bottom: -50px;    
+            right: -15px;     
             width: 105px;
             z-index: 10;
             pointer-events: none;

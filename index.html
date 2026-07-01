@@ -60,11 +60,10 @@
             color: #111;
         }
 
-        /* NEW: Light Blue Button Styling */
         .letter-btn {
             display: inline-block;
-            background-color: #add8e6; /* Cute pastel light blue */
-            color: #1b365d; /* Deep navy text for crisp readability */
+            background-color: #add8e6; 
+            color: #1b365d; 
             text-decoration: none;
             padding: 14px 28px;
             font-family: sans-serif;
@@ -76,10 +75,18 @@
         }
 
         .letter-btn:hover {
-            background-color: #bee2ee; /* Slightly brighter light blue on hover */
+            background-color: #bee2ee;
             transform: translateY(-2px);
             box-shadow: 0 6px 20px rgba(173, 216, 230, 0.6);
         }
+        @media (max-width: 768px) {
+    #bg-video {
+        width: 175vw; 
+        height: 100vh;
+        left: -37.5vw; 
+        object-fit: cover;
+    }
+}
     </style>
 </head>
 <body>
