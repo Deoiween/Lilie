@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Letter For You</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #020710;
+            overflow-y: auto;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; 
+            min-height: 100vh;
+            padding: 120px 0; /* Expanded padding to keep top/bottom stickers from hitting screen edges */
+            box-sizing: border-box;
+        }
+
+        #bg-video {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -100;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+        }
+
+        .content {
+            position: relative; /* Anchor point for ALL 3 Snoopy stickers */
+            background-color: rgba(255, 255, 255, 0.95);
+            color: #222222;
+            font-family: 'Georgia', serif;
+            padding: 40px;
+            max-width: 450px;
+            width: 80%;
+            border-radius: 12px;
+            line-height: 1.6;
+            box-shadow: 0 0 25px rgba(173, 216, 230, 0.6), 0 10px 30px rgba(0, 0, 0, 0.4); 
+        }
+
+        /* STICKER 1: Top Right */
+        .snoopy-right {
+            position: absolute;
+            top: -70px;    
+            right: -20px;  
+            width: 110px;  
+            z-index: 10;
+            pointer-events: none;
+        }
+
+        /* NEW STICKER 2: Middle Left */
+        .snoopy-mid-left {
+            position: absolute;
+            top: 45%;         /* Places him halfway down the long card */
+            left: -45px;      /* Hangs him off the left edge */
+            width: 100px;
+            z-index: 10;
+            pointer-events: none;
+        }
+
+        /* NEW STICKER 3: Bottom Right */
+        .snoopy-bottom-right {
+            position: absolute;
+            bottom: -50px;    /* Pulls him slightly below the bottom border */
+            right: -15px;     /* Off the right side */
+            width: 105px;
+            z-index: 10;
+            pointer-events: none;
+        }
+
+        .image-container {
+            width: 100%;
+            height: 280px;
+            margin-top: 15px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: inset 0 0 10px rgba(0,0,0,0.1), 0 4px 12px rgba(0,0,0,0.08);
+            background-color: #f0f0f0;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .letter-date {
+            text-align: right;
+            color: #666;
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+        }
+        
+        p {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <video autoplay muted loop playsinline id="bg-video">
+        <source src="16021877_1920_1080_30fps-2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="content">
+        <img src="https://i.pinimg.com/originals/f3/ab/e7/f3abe7af979d0342793d4d165b233122.gif" alt="Snoopy Right" class="snoopy-right">
+        <img src="https://media4.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3Y3pzMnE3cXMzM2Jnb3RwczJseXNzeGZ5MmVvcXplaTlvbWV3cHdhcCZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/VyfSqG4sG8vLUOUTtl/giphy.webp" alt="Snoopy Mid Left" class="snoopy-mid-left">
+        <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHNweHN1OHQ0MGdqcnl1ejU2N3A3bmx2aDUwNXVsYWQwbTRlOHRmaCZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/M0Wi576l2mJbNhrXwh/giphy.webp" alt="Snoopy Bottom Right" class="snoopy-bottom-right">
+
+        <div class="letter-date">July 2, 2026</div>
+        
+        <p>My love, julie.</p>
+        
+        <p>Sometimes the beginning of everything is just a food park on an ordinary day.<br><br> 
+        Unbeknownst to me, that ordinary afternoon quietly drafted the first page of a story I 
+        never intended to write. You were just another stranger occupying the same corner of the world 
+        as I was, but something tugged at me—had me looking back for you that day. Life apparently disguised 
+        permanence as coincidence. If I’m being fair to our story, the beginning wasn’t perfect. We weren’t one 
+        of those stories where everything aligned, where timing cooperated, and misunderstandings politely excused 
+        themselves. There were missed timings, disappearances, unnecessary issues; most of which, admittedly, carried my 
+        fingerprints. Yet somehow, despite every inconvenience I unintentionally became, you stayed. People often talk 
+        about loud gestures as the greatest expression of love, but I think consistency is far rarer. Anyone can love 
+        loudly for a day. You loved patiently across days I made difficult.
+
+        </p>
+        <div class="image-container">
+            <img src="IMG_7582.HEIC" alt="Our First Picture">
+        </div>
+
+        <p>I wanted to tell you all of this while sitting beside you, because voices carry things letters cannot. 
+            But until distance grows tired of separating us, these words will have to travel where I cannot. I only 
+            hope that when they finally reach you, they carry more than text and language. I know that if I asked, you’d 
+            find a way to come, because that’s the kind of person you are. But today isn’t about overcoming distance for my sake. 
+            I hope you spend it laughing until your cheeks hurt, smiling without restraint, and allowing yourself to be celebrated; 
+            not because you have to earn it, but because you already deserve it simply by being yourself. You’ve become something 
+            strange in my life—not strange in a bad way, but in the way gravity is strange. We don’t usually notice gravity until 
+            we imagine living without it. That’s what you’ve become to me. Not a constant source of excitement that fades once wonder 
+            disappears, but a quiet certainty that has woven itself into my everyday routine.<br><br>
+            Communication has never been my strongest language. Words can fail. They can arrive too late or too early. 
+            They can be interpreted differently from how they were meant. But loving you has made me ambitious enough to become bilingual. 
+            If my gestures have always spoken louder than my sentences, then let this letter be my attempt at translating them. 
+            Every hug I’ve held onto a little longer. Every glance I’ve stolen when you weren’t looking.
+             Every time I found myself smiling because you were simply being yourself. They have all been saying the same thing: I love you.
+        </p>
+        <div class="image-container">
+            <img src="IMG_7491.HEIC" alt="Our Second Picture">
+        </div>
+
+        <p>
+
+            May you never confuse kindness with weakness. They’re often mistaken for one another, but they’re worlds apart. Glass shatters because 
+            it’s fragile; flowers bloom through cracks in concrete because they’re stubborn enough to chase the sun anyway. I’ve always thought you 
+            resembled the latter more than the former. Somehow, you leave little fingerprints on moments that should’ve been forgettable, and months 
+            later they still find their way back into people’s minds. I hope life never convinces you that you have to earn the right to take up space. 
+            You don’t have to trim your laughter until it’s polite or compress your excitement until it’s digestible. Some people were born to whisper; you,
+            I think, were made to echo. What a terrible waste it would be if you ever decided to become quiet simply because someone else was uncomfortable with 
+            joy that honest.<br><br>
+            You’re special to me, Julie. That sentence looks deceptively simple on text, but it carries more weight than language can comfortably hold. 
+            And unless the day comes when you tell me to let go, I will continue choosing you with the same certainty I did yesterday and the same certainty 
+            I hope to carry tomorrow.<br><br>
+            Should the stars ever rearrange themselves, I hope they still remember to draw a path that leads me to you.
+        </p>
+        <div class="image-container">
+            <img src="IMG_2926.HEIC" alt="Our Third Picture">
+        </div>
+        <p>With all my heart,</p>
+        <p><strong>sometimes dinosaur, most of the time alien.</strong></p>
+    </div>
+
+</body>
+</html>

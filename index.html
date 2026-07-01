@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>from deo.</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #020710;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #bg-video {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -100;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+        }
+
+        .content {
+            position: relative;
+            background-color: rgba(255, 255, 255, 0.95);
+            color: #222222;
+            font-family: 'Georgia', serif;
+            padding: 40px;
+            max-width: 400px;
+            width: 80%;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        .snoopy-gif {
+            position: absolute;
+            top: -110px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 130px;
+            z-index: 10;
+            pointer-events: none;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            color: #111;
+        }
+
+        /* NEW: Light Blue Button Styling */
+        .letter-btn {
+            display: inline-block;
+            background-color: #add8e6; /* Cute pastel light blue */
+            color: #1b365d; /* Deep navy text for crisp readability */
+            text-decoration: none;
+            padding: 14px 28px;
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 0.95rem;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(173, 216, 230, 0.4);
+        }
+
+        .letter-btn:hover {
+            background-color: #bee2ee; /* Slightly brighter light blue on hover */
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(173, 216, 230, 0.6);
+        }
+    </style>
+</head>
+<body>
+
+    <video autoplay muted loop playsinline id="bg-video">
+        <source src="17007356-uhd_3840_2160_60fps-2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="content">
+        <img src="https://i.pinimg.com/originals/83/e9/7d/83e97d025ca4da9996cb97a702e7e2df.gif" alt="Snoopy" class="snoopy-gif">
+        <h1>Happy Birthday, my love.</h1>
+        <a href="letter.html" class="letter-btn">message from alien</a>
+    </div>
+
+</body>
+</html>
